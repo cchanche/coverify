@@ -1,9 +1,8 @@
-import { ThemeProviderProps } from "@emotion/react";
-import { createTheme, CSSObject, Theme, ThemeProvider } from "@mui/material";
+import { FunctionInterpolation, ThemeProviderProps } from "@emotion/react";
+import { createTheme, Theme, ThemeProvider } from "@mui/material";
 import React, { useMemo } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
-import { GlobalProps } from "@emotion/react";
 
 export const ThemeWrapper: (
   props: Omit<ThemeProviderProps, "theme">
@@ -21,12 +20,12 @@ export const ThemeWrapper: (
     []
   );
 
-  const globalStyles = useMemo<(theme: Theme) => CSSObject>(
+  const globalStyles = useMemo<FunctionInterpolation<Theme>>(
     () => (_) => ({
       body: {
         height: "100vh",
       },
-      divroot: {
+      "body > div#root": {
         height: "100%",
       },
     }),
@@ -36,16 +35,7 @@ export const ThemeWrapper: (
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
-      <GlobalStyles
-        styles={{
-          body: {
-            height: "100vh",
-          },
-          "body > div#root": {
-            height: "100%",
-          },
-        }}
-      />
+      <GlobalStyles styles={globalStyles} />
       {props.children}
     </ThemeProvider>
   );
