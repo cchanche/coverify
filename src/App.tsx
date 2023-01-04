@@ -1,5 +1,5 @@
-import { ThemeWrapper } from "./components/theme/theme";
-import { Home } from "./pages/Home";
+import { ThemeWrapper } from './components/theme/theme';
+import { Home } from './pages/Home';
 
 function App() {
   return (
