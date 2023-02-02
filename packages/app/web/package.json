@@ -1,5 +1,5 @@
 {
-  "name": "@coverify/web-app",
+  "name": "@coverify/web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "@fontsource/roboto": "^4.5.8",
     "@fontsource/source-sans-pro": "^4.5.11",
     "@mui/material": "^5.11.3",
+    "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

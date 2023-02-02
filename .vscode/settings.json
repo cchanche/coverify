@@ -5,7 +5,8 @@
     "eslint",
     "prettier",
     "workspace",
-    "docker"
+    "docker",
+    "spotify auth"
   ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
