@@ -10,6 +10,7 @@
     "packages/**"
   ],
   "scripts": {
-    "start": "docker-compose up"
+    "start": "docker-compose up",
+    "reinstall": "rm -rf node_modules && yarn workspaces run remove-modules && yarn install"
   }
 }
