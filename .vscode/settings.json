@@ -1,4 +1,10 @@
 {
-  "conventionalCommits.scopes": ["vite", "mui", "eslint", "prettier"],
+  "conventionalCommits.scopes": [
+    "vite",
+    "mui",
+    "eslint",
+    "prettier",
+    "workspace"
+  ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
