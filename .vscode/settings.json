@@ -4,7 +4,8 @@
     "mui",
     "eslint",
     "prettier",
-    "workspace"
+    "workspace",
+    "docker"
   ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
